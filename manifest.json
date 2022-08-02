@@ -1,0 +1,23 @@
+{
+    "version": "1.0",
+    "manifest_version": 3,
+    "name": "Daveed-google-bg",
+    "description": "Add a custom background",
+    "Version": "1.0",
+    "icons": {
+        "16": "/images/daveed.png",
+        "48": "/images/daveed.png",
+        "128": "/images/daveed.png"
+    },
+    "page_action": {
+        "default_icon": {
+            "16": "/images/daveed.png",
+            "48": "/images/daveed.png",
+            "128": "/images/daveed.png"
+        }
+    },
+    "content_scripts": [{
+        "matches": ["https://www.google.com/*"],
+        "css": ["main.css"]
+    }]
+}
